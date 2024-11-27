@@ -39,24 +39,37 @@ public class Main {
         displayZoneFrame.setSize(1550,800);
         displayZoneFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        // LEVEL2 :
         Hero hero = new Hero(70, 200,ImageIO.read(new File("./img/heroTileSheetLowRes.png")), 48, 50, 100, 30, 25);
+        
         Orc orc1 = new Orc(260.0, 270.0, ImageIO.read(new File("./img/orc2.png")), 64, 64, 50, 30, 20, Patterntype.SQUARE);
-  
-            
         Orc orc2 = new Orc(450.0, 510.0, ImageIO.read(new File("./img/orc2.png")), 64, 64,  50, 30,20, Patterntype.BACK_AND_FORTH);
-
         Orc orc3 = new Orc(1420.0, 510.0, ImageIO.read(new File("./img/orc1.png")), 64, 64,  50, 30,20);
         Orc orc4 = new Orc(70.0, 575.0, ImageIO.read(new File("./img/orc1.png")), 64, 64,  50, 30,20);
         Orc orc5 = new Orc(1080.0, 260.0, ImageIO.read(new File("./img/orc2.png")), 64, 64,  50, 30,20, Patterntype.BACK_AND_FORTH);
-
 
         Heart_ heart1 = new Heart_(1420, 75, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
         Heart_ heart2 = new Heart_(1420, 650, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
         Heart_ heart3 = new Heart_(70, 75, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
         Heart_ heart4 = new Heart_(780, 580, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
 
-
         Playground level1 = new Playground("./data/level2.txt");
+        //LEVEL1 :
+        // Hero hero = new Hero(200, 140,ImageIO.read(new File("./img/heroTileSheetLowRes.png")), 48, 50, 100, 30, 25);
+        
+        // Orc orc1 = new Orc(260.0, 270.0, ImageIO.read(new File("./img/orc2.png")), 64, 64, 50, 30, 20, Patterntype.SQUARE);
+        // Orc orc2 = new Orc(450.0, 510.0, ImageIO.read(new File("./img/orc2.png")), 64, 64,  50, 30,20, Patterntype.BACK_AND_FORTH);
+        // Orc orc3 = new Orc(1420.0, 510.0, ImageIO.read(new File("./img/orc1.png")), 64, 64,  50, 30,20);
+        // Orc orc4 = new Orc(70.0, 575.0, ImageIO.read(new File("./img/orc1.png")), 64, 64,  50, 30,20);
+        // Orc orc5 = new Orc(1080.0, 260.0, ImageIO.read(new File("./img/orc2.png")), 64, 64,  50, 30,20, Patterntype.BACK_AND_FORTH);
+
+        // Heart_ heart1 = new Heart_(1420, 75, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
+        // Heart_ heart2 = new Heart_(1420, 650, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
+        // Heart_ heart3 = new Heart_(70, 75, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
+        // Heart_ heart4 = new Heart_(780, 580, ImageIO.read(new File("./img/heart.png")), 32, 32, 30);
+
+        // Playground level1 = new Playground("./data/level1.txt");
+
         orc2.setDirection(Direction.WEST);
 
         orc3.setDirection(Direction.WEST);
